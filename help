@@ -1,0 +1,15 @@
+* Polymorphism :
+    - Polymorphism means "many forms", and it occurs when we have many
+    classes that are related to each other by inheritance.
+
+    - In C++ polymorphism is mainly divided into two types: Compile time Polymorphism and Runtime Polymorphism. The Compile time Polymorphism polymorphism is achieved by function overloading or operator overloading.
+        Runtime polymorphism is achieved by Function Overriding.
+
+* Function Overloading :
+     -  two or more functions can have the same name if the number and/or type of parameters are different,
+    \this is called function overloading
+
+* Overriding Function : (virtual)
+     -  When a member function of a base class is redefined in its derived class with the same parameters and return type,
+      it is called function overriding in C++
+
