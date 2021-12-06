@@ -3,12 +3,12 @@ NAME = Materia
 CC = clang++
 FLAGS = -Werror -Wextra -Wall
 
-SRC = src/main.cpp src/ICharacter.cpp src/AMateria.cpp
+SRC = src/main.cpp src/Cure.cpp src/Ice.cpp src/AMateria.cpp src/Character.cpp src/MateriaSource.cpp
 
 all : $(NAME)
 
 $(NAME) : $(SRC)
-	@$(CC) -I $(SRC) $(FLAG) -o $(NAME)
+	@$(CC) $(SRC) $(FLAG) -o $(NAME)
 
 fclean : clean
 	@rm -f $(NAME)

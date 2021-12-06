@@ -17,7 +17,7 @@ public:
     AMateria(std::string const & type);
     AMateria(const AMateria &amateria);
     AMateria();
-    ~AMateria();
+    virtual ~AMateria();
 
     // ------------------- Members Public functions ---------------- //
     virtual AMateria* clone() const = 0;
