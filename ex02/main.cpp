@@ -43,8 +43,5 @@ int main()
     for (int i = 0; i < 10; i++)
         delete animals[i];
 
-        // delete animals[0];
-
-    // Animal a = new Animal();
     return (0);
 }

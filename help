@@ -13,3 +13,31 @@
      -  When a member function of a base class is redefined in its derived class with the same parameters and return type,
       it is called function overriding in C++
 
+!!! ex02 abstract class (non inststatiable class)
+
+
+Ex 03:
+  Materia (マテリア, Materia?) is a recurring term and set of items in the Final Fantasy series that
+  is typically associated with stat boosts and abilities, 
+
+r
+
+// ---------------------------------------------------------------------------------//
+
+  // Public Members ------ //
+    public:
+
+    // ---------------- Constructors & Destructors ------------- //
+    Dog();
+    ~Dog();
+    Dog(const Dog &dog);
+
+    // ------------------- Members Public functions ---------------- //
+    void    makeSound( void ) const;
+    Brain   *getBrain( void ) const;
+    
+    // --------------------  Get & Set ----------------------------- //
+    Brain *getBrain( void );
+    
+    // ------------------  Assignement operator --------------------- //
+    virtual Animal		&operator = (Animal const &animal) ;
