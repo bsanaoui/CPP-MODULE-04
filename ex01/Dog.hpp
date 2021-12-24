@@ -7,12 +7,14 @@
 
 class Dog : public Animal
 {
+    private:
+    Brain *_brain;
     // Public Members ------ //
     public:
 
     // ---------------- Constructors & Destructors ------------- //
     Dog();
-    ~Dog();
+     ~Dog();
     Dog(const Dog &dog);
 
     // ------------------- Members Public functions ---------------- //

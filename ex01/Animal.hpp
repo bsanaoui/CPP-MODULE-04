@@ -9,7 +9,6 @@ class Animal
     // Protected Members ----- //
     protected:
     std::string type;
-    Brain *_brain;
 
 
     // Public Members ------ //

@@ -6,13 +6,14 @@
 
 class Cat : public Animal
 {
-
+    private:
+    Brain *_brain;
     // Public Members ------ //
     public:
 
     // ---------------- Constructors & Destructors ------------- //
     Cat();
-    ~Cat();
+    virtual ~Cat();
     Cat(const Cat &cat);
 
     // ------------------- Members Public functions ---------------- //
