@@ -1,7 +1,5 @@
-#include "Animal.hpp"
 #include "Cat.hpp"
 #include "Dog.hpp"
-
 
 int main()
 {
@@ -15,33 +13,28 @@ int main()
         else
             animals[i] = new Cat();
     }
-    // -------
-    Brain   *brain = animals[0]->getBrain();
+
+    std::cout << " ------------- Delete animals ------------ " << std::endl;
+    for (int i = 0; i < 10; i++)
+        delete animals[i];
+    
+    std::cout << " ------------- Create 2 Dogs ------------ " << std::endl;
+
+    Cat cat1, cat2;
+    Brain   *brain = cat1.getBrain();
     brain->_ideas[0] = "I am the Monster !";
     brain->_ideas[1] = "OHHHH333333 !!";
 
     std::cout << " ------------- Get Ideas ------------ " << std::endl;
-    int nb_animal = 0;
-    std::cout << animals[nb_animal]->getType() << " " << nb_animal << ": "
-            << animals[nb_animal]->getBrain()->_ideas[0] << std::endl;
 
-    nb_animal = 5;
-    std::cout << animals[nb_animal]->getType() << " " << nb_animal << ": "
-            << animals[nb_animal]->getBrain()->_ideas[0] << std::endl;
+    std::cout << cat1.getType() << " 0: " << cat1.getBrain()->_ideas[0] << std::endl;
+    std::cout << cat2.getType() << " 0: " << cat2.getBrain()->_ideas[0] << std::endl;
 
     std::cout << " ------------- Assignement animal to animal ------------ " << std::endl;
-    *(animals[5]) = *(animals[0]);
-    nb_animal = 0;
-    std::cout << animals[nb_animal]->getType() << " " << nb_animal << ": "
-            << animals[nb_animal]->getBrain()->_ideas[0] << std::endl;
+    cat1 = cat2;
 
-    nb_animal = 5;
-    std::cout << animals[nb_animal]->getType() << " " << nb_animal << ": "
-            << animals[nb_animal]->getBrain()->_ideas[0] << std::endl;
-
-    std::cout << " ------------- Delete animals------------ " << std::endl;
-    for (int i = 0; i < 10; i++)
-        delete animals[i];
-
+    std::cout << cat1.getType() << " 0: " << cat1.getBrain()->_ideas[0] << std::endl;
+    std::cout << cat2.getType() << " 0: " << cat2.getBrain()->_ideas[0] << std::endl;
+    std::cout << " ------------- Delete cats --ß---------- " << std::endl;
     return (0);
 }

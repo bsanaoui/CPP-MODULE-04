@@ -1,7 +1,7 @@
 NAME = Brain
 
-CC = clang++
-FLAGS = -Werror -Wextra -Wall
+CC = clang++ #-g -fsanitize=address
+FLAGS = -Werror -Wextra -Wall 
 
 SRC = main.cpp Animal.cpp Cat.cpp Dog.cpp Brain.cpp
 

@@ -23,11 +23,6 @@ std::string Animal::getType( void ) const
     return (this->type);
 }
 
-    // ------------------- Members Public functions ---------------- //
-void    Animal::makeSound( void ) const
-{
-    std::cout << "Any Animal sound !"<< std::endl;
-}
 
     // ------------------  Operator Overload ----------------------- //
             //  ***** Assignement ********* //

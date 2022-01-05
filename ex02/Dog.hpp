@@ -7,23 +7,24 @@
 
 class Dog : public Animal
 {
+    private:
+    Brain *_brain;
     // Public Members ------ //
     public:
 
     // ---------------- Constructors & Destructors ------------- //
     Dog();
-    ~Dog();
+    virtual ~Dog();
     Dog(const Dog &dog);
 
     // ------------------- Members Public functions ---------------- //
     void    makeSound( void ) const;
-    Brain   *getBrain( void ) const;
     
     // --------------------  Get & Set ----------------------------- //
-    Brain *getBrain( void );
+    Brain *getBrain( void ) const;
     // ------------------  Operator Overload ----------------------- //
             //  ***** Assignement ********* //
-    Animal    &operator = (Animal const &animal);
+    Dog    &operator = (Dog const &dog);
 
 };
 

@@ -1,7 +1,6 @@
 #ifndef __ANIMAL__
 #define __ANIMAL__
 #include <iostream>
-#include "Brain.hpp"
 
 class Animal
 {
@@ -21,7 +20,6 @@ class Animal
 
     // ----------------- Getters & Setters ----------------------- //
     std::string 	getType( void ) const ;
-	virtual Brain   *getBrain( void ) const = 0;
 
     // ------------------- Members Public functions --------------- //
     virtual void        makeSound( void ) const;

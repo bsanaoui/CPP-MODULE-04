@@ -18,14 +18,12 @@ class Cat : public Animal
 
     // ------------------- Members Public functions ---------------- //
     void    makeSound( void ) const;
-    Brain   *getBrain( void ) const;
 
     // --------------------  Get & Set ----------------------------- //
-    Brain *getBrain( void );
+    Brain *getBrain( void ) const;
     // ------------------  Operator Overload ----------------------- //
             //  ***** Assignement ********* //
-    Animal    &operator = (Animal const &animal);
-
+    Cat    &operator = (Cat const &cat);
 };
 
 #endif

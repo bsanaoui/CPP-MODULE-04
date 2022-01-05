@@ -17,6 +17,7 @@ class Brain
 
     // ----------------- Getters & Setters ------------------------ //
 
+    
     // ------------------  Operator Overload ----------------------- //
             //  ***** Assignement ********* //
     Brain    &operator = (Brain const &brain) ;

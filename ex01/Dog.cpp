@@ -3,9 +3,10 @@
     // ---------------- Constructors & Destructors ------------- //
 Dog::Dog()
 {
+    std::cout << "Dog Constructor !!" << std::endl;
     this->type = "Dog";
     this->_brain = new Brain();
-    std::cout << "Dog Constructor !!" << std::endl;
+    
 }
 
 Dog::~Dog()
@@ -16,6 +17,8 @@ Dog::~Dog()
 
 Dog::Dog(const Dog &dog)
 {
+    std::cout << "Dog Copy Constructor !!"<< std::endl;
+    this->_brain = new Brain();
     *this = dog;
 }
 
@@ -33,9 +36,9 @@ Brain   *Dog::getBrain( void ) const
 
     // ------------------  Operator Overload ----------------------- //
             //  ***** Assignement ********* //
-Animal    &Dog::operator = (Animal const &animal)
+Dog    &Dog::operator = (Dog const &dog)
 {
-    *(this->_brain) = *(animal.getBrain());
-    this->type = animal.getType();
+    std::cout << "Dog Assignement !!"<< std::endl;
+    *(this->_brain) = *(dog.getBrain());
     return (*this);
 }

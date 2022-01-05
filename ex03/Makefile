@@ -1,7 +1,7 @@
 NAME = Materia
 
-CC = clang++
-FLAGS = -Werror -Wextra -Wall
+CC = clang++ -g #-fsanitize=address
+FLAGS = -Werror -Wextra -Wall 
 
 SRC = src/main.cpp src/Cure.cpp src/Ice.cpp src/AMateria.cpp src/Character.cpp src/MateriaSource.cpp
 
